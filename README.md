@@ -1,4 +1,4 @@
-# GitHub-reposito
+# GitHub-repositor
 ## Don't do any editing work just review it 
 ***
 ### Q
