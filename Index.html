@@ -32,21 +32,23 @@
       cursor: pointer; 
       border-radius: 10px; 
       transition: transform 0.2s; 
-      border: solid 2px #000000; 
-      background-color: #0000ff; 
+      
       color: #000000; 
     }
-     .Fbttn{
+     .fbttn{
        border: solid 2px #000000; 
       background-color: #ff0000; 
       color: #000000; 
      }
-      .Rbttn{
+      .rbttn{
        border: solid 2px #000000; 
       background-color: #00ff00; 
       color: #000000; 
      }
-      
+      .bttn{
+        border: solid 2px #000000; 
+      background-color: #0000ff;
+      }
       button:hover { 
        border:solid 3px #ff00ee;
        transform: scale(1.1);
@@ -106,7 +108,7 @@
     </style>
   </head>
   <body>
-    <div class="active, page" id="home">
+    <div class="active page" id="home">
       <div class="head">
         <h1><b>CHOOSE ONE</b></h1>
         <BR>
@@ -115,22 +117,22 @@
      <hr>
      <BR>
       <DIV class="home-buttons">
-      <button onclick="showpage('fake')" class="fbbtn">FAKE </button>
+      <button onclick="showpage('fake')" class="fbttn">FAKE </button>
       <BR>
       <HR>
       <BR>
-      <button onclick="showpage('real')" class="rbbtn">REAL </button>
+      <button onclick="showpage('real')" class="rbttn">REAL </button>
       </div>
       
      <br>
       <hr>
     </div>
     <div id="real" class="page">
-      <button onclick="showpage('home')"> BACK </button>
+      <button onclick="showpage('home')" class="bttn"> BACK </button>
       
     </div>
     <div id="fake" class="page">
-      <button onclick="showpage('home')"> BACK </button>
+      <button onclick="showpage('home')" class="bttn"> BACK </button>
       
     </div>
     <script>
@@ -140,4 +142,5 @@
                                                }
     </script>
   </body>
-</html>
+  </html>
+  
